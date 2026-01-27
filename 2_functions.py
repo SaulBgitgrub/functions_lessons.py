@@ -31,13 +31,10 @@ def welcome(name):
 
 # You should only define the function and create the variable, you should not call the function afterwards.
 
-def square(x):
-    y = x * x
-    print(y)
 
 number = 5
 def squared(number):
     print(number ** 2)
-print(squared(number))
-square(3)
-square(7)
+
+squared(3)
+squared(7)
