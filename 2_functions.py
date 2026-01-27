@@ -9,6 +9,7 @@
 
 
 
+
 # Create Functions Practice #2
 # Declare a Function: Create a function called welcome that takes a person's name as an argument. This function should print "Welcome {name}!" whenever it is called.
 
@@ -16,7 +17,9 @@
 
 # Note: Only define the function and create the variable. Do not call the function afterwards.
 
-
+name = "alice"
+def welcome(name):
+    print(f"welcome {name}")
 
 
 
@@ -27,3 +30,14 @@
 # The name of the argument that this function must take is number. Create this variable and assign it any number.
 
 # You should only define the function and create the variable, you should not call the function afterwards.
+
+def square(x):
+    y = x * x
+    print(y)
+
+number = 5
+def squared(number):
+    print(number ** 2)
+print(squared(number))
+square(3)
+square(7)
