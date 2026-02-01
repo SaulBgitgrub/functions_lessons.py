@@ -5,7 +5,7 @@
 def number_attributes(**kwargs):
     return len(kwargs)
 
-number_attributes(a=2, b=4)
+print(number_attributes(a=2, b=4))
 
 
 

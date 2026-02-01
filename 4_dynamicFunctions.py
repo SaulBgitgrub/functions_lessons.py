@@ -17,9 +17,12 @@ def all_positives(list):
 # Create a function (sum_less) that adds the numbers of a list as long as they are greater than 0 and less than 1000, and returns the result of said sum. Create a numbers variable, storing a list of numbers so we can test it.
 list2 = [0, 5, 7, 2000]
 def sum_less(list2):
-    for sum in list2:
-        if sum < 1000 and sum > 0:
-            
+    total = 0
+    for num in list2:
+        if 0 < num < 1000:
+            total += num
+    return total
+print(sum_less(list2))
 
 
 
@@ -27,3 +30,11 @@ def sum_less(list2):
 
 # Dynamic Functions Practice #3
 # Create a function (count_even) that counts the number of even numbers that exist in a list (numbers), and returns the result of said count.
+list3 = [1,2,3,4,5,6]
+def count_even(list3):
+    count = 0
+    for even in list3:
+        if even % 2 == 0:
+            count += 1
+    return count
+print(count_even(list3))
